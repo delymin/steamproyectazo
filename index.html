@@ -1,0 +1,169 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasaBlanca Bakery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Fuente por defecto */
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+        }
+        header {
+            font-family: Arial, sans-serif; /* Arial para el encabezado */
+            background-color: #ba5833;
+            color: white;
+            padding: 40px 20px; /* Aumentar el padding para más separación */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%; /* Abarcar toda la página */
+            position: relative; /* Permitir posicionamiento relativo */
+            z-index: 1; /* Asegurarse de que esté por encima de otros elementos */
+        }
+        header h1 {
+            font-size: 3em; /* Aumentar el tamaño del título */
+            margin: 0; /* Eliminar margen por defecto */
+        }
+        nav {
+            margin: 30px 0; /* Aumentar el margen para separación */
+            text-align: center;
+            background-color: #f0e6d6; /* Fondo suave para la barra de navegación */
+            padding: 15px; /* Padding adicional */
+            border-radius: 30px; /* Esquinas redondeadas */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Abarcar toda la página */
+            z-index: 1; /* Asegurarse de que esté por encima de otros elementos */
+            position: relative; /* Permitir posicionamiento relativo */
+        }
+        nav a {
+            margin: 0 15px;
+            font-family: Arial, sans-serif; /* Arial para hipervínculos */
+            color: #ba5833;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.8em; /* Aumentar el tamaño de los hipervínculos */
+            border: 2px solid #ba5833;
+            padding: 10px 15px;
+            border-radius: 30px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ba5833;
+            color: white;
+        }
+        section {
+            padding: 30px;
+            background-color: #ffffff;
+            margin: 0; /* Eliminar margen para que abarque toda la página */
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none; /* Oculta secciones inicialmente */
+        }
+        section.active {
+            display: block; /* Muestra la sección activa */
+        }
+        section h2 {
+            text-align: center; /* Centrar títulos de secciones */
+            font-size: 2.5em; /* Tamaño grande para los títulos de las secciones */
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            display: block;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #ba5833;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ba5833;
+            color: white;
+            width: 100%; /* Abarcar toda la página */
+            position: relative;
+            bottom: 0;
+            z-index: 1; /* Asegurarse de que esté por encima de otros elementos */
+        }
+        p {
+            color: #333; /* Color del texto para mejor legibilidad */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CasaBlanca Bakery</h1>
+</header>
+
+<nav>
+    <a href="#inicio" onclick="showSection('inicio')">Inicio</a>
+    <a href="#nosotros" onclick="showSection('nosotros')">Nosotros</a>
+    <a href="#mision" onclick="showSection('mision')">Misión</a>
+    <a href="#vision" onclick="showSection('vision')">Visión</a>
+    <a href="#contactanos" onclick="showSection('contactanos')">Contáctanos</a>
+</nav>
+
+<section id="inicio" class="active">
+    <h2>Bienvenido a CasaBlanca Bakery</h2>
+    <p>¡Disfruta de nuestros deliciosos pasteles hechos a mano!</p>
+    <img src="https://imag.bonviveur.com/cinnamon-rolls.jpg" alt="Roles de Canela">
+    <img src="https://www.azucardominomex.com/sites/azucardominomex_com/files/styles/m/public/2022-09/600x336_PASTEL-DE-CHOCOLATE-BRUCE.jpg.webp?itok=1xSHaWTo" alt="Pastel de Chocolate">
+    <img src="https://i.pinimg.com/736x/5f/54/6e/5f546ea25c59a9eade80ed13897ab0a8.jpg" alt="Pastel">
+</section>
+
+<section id="nosotros">
+    <h2>Nosotros</h2>
+    <p>En CasaBlanca Bakery, cada pastel nos cuenta una historia. Casa Blanca ha nacido a partir de la necesidad de la gente de la repostería, el deseo de hacer y compartir deliciosos pasteles. Hoy en día, Casa Blanca ha crecido para convertirse en un nombre conocido entre los amantes de la pastelería, ofreciendo impresionantes pasteles hechos a mano que otorgan a cada individuo su sentido de unicidad.</p>
+    
+    <img src="https://i.imgur.com/vQXk4gU.jpg" alt="Imagen del pastel">
+    
+    <p>Fundada en 2024, CasaBlanca Bakery nació con la visión de transformar la cultura de la repostería en Acapulco. Lo que comenzó como un pequeño local, rápidamente se convirtió en un punto de encuentro para locales y turistas que buscaban calidad y hospitalidad en un solo lugar. Hoy en día, seguimos creciendo, pero mantenemos la esencia de nuestra historia: amor por los pasteles y pasión por crear experiencias únicas.</p>
+</section>
+
+<section id="mision">
+    <h2>Misión</h2>
+    <p>En nuestra pastelería, nos dedicamos a crear experiencias memorables a través de la elaboración de productos de repostería de alta calidad. Utilizamos ingredientes frescos y técnicas artesanales para ofrecer una amplia variedad de delicias que celebran tanto la tradición como la innovación. Nuestra misión es proporcionar un ambiente acogedor y un servicio excepcional, comprometidos con la satisfacción de nuestros clientes y el fomento de la cultura local en Acapulco.</p>
+</section>
+
+<section id="vision">
+    <h2>Visión</h2>
+    <p>Nuestro objetivo es convertirnos en la principal cadena de pastelerías en Acapulco, destacando por la calidad en la elaboración de roles de canela y nuestro compromiso con la sostenibilidad. Queremos crear un ambiente acogedor para todos nuestros clientes, donde cada rebanada de pastel transmita nuestra dedicación y pasión por lo que hacemos.</p>
+</section>
+
+<section id="contactanos">
+    <h2>Contáctanos</h2>
+    <p>Si deseas más información o tienes alguna pregunta, estamos aquí para ayudarte.</p>
+    <p><strong>Dirección:</strong> Av. Principal 123, Acapulco, Guerrero, México</p>
+    <p><strong>Teléfono:</strong> +52 744 587 8320</p>
+    <p><strong>Correo electrónico:</strong> casablancabakery@gmail.com.mx</p>
+    <p><strong>Horario:</strong> Lunes a Sábado - 9:00 am a 10:00 pm, Domingo - 10:00 am a 8:00 pm</p>
+    <p>¡<span class="highlight">Síguenos en Instagram</span>! <a href="https://www.instagram.com/casablancabakeryy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 CasaBlanca Bakery. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        // Ocultar todas las secciones
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+        
+        // Mostrar la sección seleccionada
+        const activeSection = document.getElementById(sectionId);
+        activeSection.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
